@@ -14,4 +14,7 @@ public with sharing class AccountHelper {
             }
         }
     }
+    public void doMoreWork(Integer p1, Integer p1, Integer p3, Integer p4 ) {
+            System.log('function with excessive parameters');
+    }
 }
