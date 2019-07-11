@@ -19,7 +19,7 @@
         </classpath>
     </taskdef>
     
-    <target name="runRuleTest" depends="PMDTest">
+    <target name="runRuleTest" depends="deployCode">
     </target>
     <!-- Shows deploying code & running tests for code in directory -->
     <target name="deployCode">
