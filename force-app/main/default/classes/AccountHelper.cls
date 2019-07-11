@@ -1,8 +1,12 @@
 public with sharing class AccountHelper {
     public AccountHelper() {
+        List<Contact> con=[Select id,name from Contact limit 10];
         system.System.debug('Hello');
         for (int i = 0; i < 42; i++)
+        {
+            update con[i];
             system.System.debug('Hello');
+        }
         if(true)
         {
             if(true)
