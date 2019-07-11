@@ -11,7 +11,7 @@
     <condition property="sf.password" value=""> <not> <isset property="sf.password"/> </not> </condition>
     <condition property="sf.sessionId" value=""> <not> <isset property="sf.sessionId"/> </not> </condition>
 
-  <taskdef name="pmd" classname="PMDTask"  />
+  <taskdef name="pmd"  />
     <!--
   <taskdef name="cpd" classname="net.sourceforge.pmd.cpd.CPDTask" classpathref="pmd.classpath" />   -->
     <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce" classpath="ant-salesforce.jar">
