@@ -19,6 +19,8 @@
         </classpath>
     </taskdef>
     
+    <target name="runRuleTest" depends="PMDTest">
+    </target>
     <!-- Shows deploying code & running tests for code in directory -->
     <target name="deployCode">
       <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
