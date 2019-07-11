@@ -11,7 +11,7 @@
     <condition property="sf.password" value=""> <not> <isset property="sf.password"/> </not> </condition>
     <condition property="sf.sessionId" value=""> <not> <isset property="sf.sessionId"/> </not> </condition>
 
-   <!-- <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" classpathref="pmd.classpath" />
+  <!--  <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" classpathref="pmd.classpath" />
   <taskdef name="cpd" classname="net.sourceforge.pmd.cpd.CPDTask" classpathref="pmd.classpath" />   -->
     <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce" classpath="ant-salesforce.jar">
         <classpath>
@@ -33,10 +33,10 @@
       <!-- Retrieve the contents listed in the file codepkg/package.xml into the codepkg directory -->
       <sf:retrieve username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="codepkg" unpackaged="codepkg/package.xml"/>
     </target>
-          <!-- 
+           
     <target name="pmd">
     <pmd shortFilenames="false" >
-      <formatter type="${pmd.format}" toFile="outputPMD.${pmd.format}" />
+      <formatter type="html" toFile="outputPMD.html" />
       <ruleset>rulesets/apex/complexity.xml</ruleset>
       <ruleset>rulesets/apex/performance.xml</ruleset>
       <ruleset>rulesets/apex/style.xml</ruleset>
@@ -52,7 +52,7 @@
         <include name="**/*.trigger"/>
       </fileset>
     </pmd>
-  </target>    -->
+  </target>    
 
 </project>
 
