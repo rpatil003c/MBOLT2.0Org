@@ -53,9 +53,10 @@
       <ruleset>rulesets/apex/empty.xml</ruleset>
       <ruleset>rulesets/apex/metrics.xml</ruleset>
       <ruleset>rulesets/apex/ruleset.xml</ruleset>
+      <ruleset>rulesets/vf/security.xml</ruleset>
       <fileset dir="${src.dir}">
         <include name="**/*.cls"/>
-        <include name="**/*.trigger"/>
+        <include name="**/*.page"/>
       </fileset>
     </pmd>
   </target>    
