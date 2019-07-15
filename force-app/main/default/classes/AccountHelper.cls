@@ -19,7 +19,7 @@ public with sharing class AccountHelper {
             }
         }
     }
-    public void doMoreWork(Integer p1, Integer p1, Integer p3, Integer p4 ) {
+    public void doMoreWork(Integer p1, Integer p2, Integer p3, Integer p4 ) {
             System.debug('function with excessive parameters');
     }
 }
