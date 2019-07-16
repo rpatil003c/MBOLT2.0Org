@@ -1,4 +1,5 @@
 <apex:page standardController="Order" extensions="OrderExtension" >
+
     <apex:sectionHeader title="{!$ObjectType.Order.Label} Edit" subtitle="{!IF(Order.Id == null,'New '+$ObjectType.Order.Label,Order.Name)}" />
     <apex:form id="form" >
         <apex:pageMessages id="pageMessages" />
@@ -17,6 +18,7 @@
         <apex:actionRegion >
             <apex:pageBlock title="Summary" id="summary" >
                 <apex:pageBlockSection columns="2" >
+                <apex:outputText value="Potential XSS is {! here }" escape="false" />
                     <apex:pageMessage severity="Info" summary="No Products have been selected" rendered="{!pieData == null}" />
                     <apex:outputPanel rendered="{!pieData != null}" >
                         <apex:chart height="250" width="350" data="{!pieData}" >
