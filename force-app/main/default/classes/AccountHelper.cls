@@ -6,7 +6,7 @@ public with sharing class AccountHelper {
         {
             update con[i];
             System.debug('Hello');
-            //system.System.debug('Hello First Commit');
+            system.System.debug('Hello First Commit');
         }
         if(true)
         {
