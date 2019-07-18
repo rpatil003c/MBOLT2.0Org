@@ -54,6 +54,10 @@
       <ruleset>rulesets/apex/metrics.xml</ruleset>
       <ruleset>rulesets/apex/ruleset.xml</ruleset>
       <ruleset>rulesets/vf/security.xml</ruleset>
+      <ruleset>rulesets/ecmascript/basic.xml</ruleset>
+      <ruleset>rulesets/ecmascript/braces.xml</ruleset>
+      <ruleset>rulesets/ecmascript/controversial.xml</ruleset>
+      <ruleset>rulesets/ecmascript/unnecessary.xml</ruleset>
       <fileset dir="${src.dir}">
         <include name="**/*.cls"/>
         <include name="**/*.page"/>
