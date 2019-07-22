@@ -41,7 +41,7 @@
     </target>
            
     <target name="pmd">
-    <pmd shortFilenames="false"  >
+    <pmd shortFilenames="false" failOnRuleViolation="true"  >
       <formatter type="html" toFile="outputPMD.html" />
       <ruleset>rulesets/apex/complexity.xml</ruleset>
       <ruleset>rulesets/apex/performance.xml</ruleset>
